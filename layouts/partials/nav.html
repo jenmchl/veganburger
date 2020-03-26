@@ -19,7 +19,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a class="page-scroll" href="#contact">
-                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <i class="fa fa-phone fa wow bounceIn"></i>
                         11 3101-7912
                     </a>
                 </li>
@@ -36,7 +36,10 @@
                 {{ end }}
                 {{ if and .Site.Data.projects .Site.Params.navigation.links.portfolio }}
                     <li>
-                        <a class="page-scroll" href="#portfolio">{{ .Site.Params.navigation.links.portfolio }}</a>
+                        <a class="page-scroll" href="#portfolio">
+                          <i class="fa fa-bars fa wow bounceIn"></i>
+                          {{ .Site.Params.navigation.links.portfolio }}
+                        </a>
                     </li>
                 {{ end }}
                 {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
@@ -44,6 +47,12 @@
                     <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
                 </li>
                 {{ end }}
+                <li>
+                    <a class="page-scroll" href="https://www.instagram.com/veganburger/" target="_blank">
+                        <i class="fa fa-instagram fa wow bounceIn"></i>
+                    </a>
+                </li>
+
             </ul>
         </div>
         {{ "<!-- /.navbar-collapse -->" | safeHTML }}
