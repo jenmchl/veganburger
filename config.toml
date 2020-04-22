@@ -103,7 +103,7 @@ googleAnalytics = ""
 		email = "contato@veganburger.com.br"
 
 	 # Google Maps section
-	[params.location]
-		latitude  = "34.007850"
-		longitude = "-118.499305"
-		maps_api_key = ""
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""

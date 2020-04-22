@@ -24,9 +24,7 @@
             {{ partial "portfolio.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.location }}
-            {{ partial "location.html" . }}
-        {{ end }}
+        {{ partial "location.html" . }}
 
         <!-- {{ if .Site.Params.aside }}
             {{ partial "aside.html" . }}
