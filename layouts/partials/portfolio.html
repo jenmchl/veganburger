@@ -3,17 +3,16 @@
         <div class="row">
             {{ range .Site.Data.projects }}
                 <div class="burger-container text-center col-lg-4 col-md-4 col-sm-12 col-xm-12">
-                    <div class="burger" style='background-image: url({{ .img }})'>
-                        <h2 class="">
-                            <span class="name"><strong>{{ .title }}</strong></span>
+                    <div class="burger" style='background-image: url({{ .img }})'></div>
+                    <div class="content">
+                        <h2 class="title">
+                            <strong>{{ .title }}
+                            &nbsp;&nbsp;<span class="price">R${{ .price }}</span></strong>
                         </h2>
-                        <span class="price">R${{ .price }}</span>
-
-                        <div class="description">
+                        <div class="description text-center">
                             <p>{{ .description }}</p>
                         </div>
                     </div>
-                    <!-- <img src="img/portfolio/{{ .img }}" class="img-responsive" alt=""> -->
                 </div>
             {{ end }}
         </div>
