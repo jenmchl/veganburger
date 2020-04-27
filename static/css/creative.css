@@ -592,7 +592,7 @@ img::-moz-selection {
     display:inline-block;
     overflow:hidden;
     width: 100%;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 #location iframe {
