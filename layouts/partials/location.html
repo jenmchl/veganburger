@@ -1,11 +1,13 @@
 <section id="location" class="no-padding">
     <div id="map"></div>
+    <div class="delivery-text"><h2><strong>Área de entrega</strong></h2></div>
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -23.550717, lng: -46.646465},
-          zoom: 13.5
+          zoom: 13.5,
+          mapTypeControl: false
         });
 
         var deliveryAreaCoords = [

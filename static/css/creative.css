@@ -644,3 +644,14 @@ img::-moz-selection {
 #map {
     height: 100%;
 }
+
+#location .delivery-text {
+    position: relative;
+    bottom: 528px;
+    background-color: rgba(234, 152, 62, 0.9);
+    max-width: 260px;
+    padding: 1px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
