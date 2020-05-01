@@ -622,13 +622,14 @@ img::-moz-selection {
     display:inline-block;
     overflow:hidden;
     width: 100%;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 #location .map-container div {
+    background-color: var(--vb-orange);
+    color: white;
     position: relative;
     bottom: 550px;
-    background-color: var(--vb-orange);
     max-width: 260px;
     padding: 10px;
     text-transform: uppercase;
