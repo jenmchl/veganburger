@@ -17,10 +17,16 @@
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a class="page-scroll" href="#contact">
+                      <!-- <i class="fa fa-phone fa wow bounceIn"></i> -->
+                      seg-sex 18h-22h
+                  </a>
+              </li>
                 <li>
                     <a class="page-scroll" href="#contact">
                         <i class="fa fa-phone fa wow bounceIn"></i>
-                        11 3101-7912
+                        Peça agora 11 3101-7912
                     </a>
                 </li>
 
@@ -36,10 +42,10 @@
                 {{ end }}
                 {{ if and .Site.Data.projects .Site.Params.navigation.links.portfolio }}
                     <li>
-                        <a class="page-scroll" href="#portfolio">
+                        <!-- <a class="page-scroll" href="#portfolio">
                           <i class="fa fa-bars fa wow bounceIn"></i>
                           {{ .Site.Params.navigation.links.portfolio }}
-                        </a>
+                        </a> -->
                     </li>
                 {{ end }}
                 {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
