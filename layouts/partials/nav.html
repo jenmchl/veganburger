@@ -3,12 +3,10 @@
     <div class="container-fluid">
         {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <a class="mob-phone page-scroll" href="#contact">
+                <i class="fa fa-phone fa"></i>
+                <strong>11 3101-7912</strong>
+            </a>
 
             <a class="navbar-brand page-scroll" href="#page-top">
               <img class="logo" src="img/logohorizontal.png" alt="Vegan Burger">
@@ -38,14 +36,6 @@
                 {{ if and .Site.Params.services.list .Site.Params.navigation.links.services }}
                     <li>
                         <a class="page-scroll" href="#services">{{ .Site.Params.navigation.links.services }}</a>
-                    </li>
-                {{ end }}
-                {{ if and .Site.Data.projects .Site.Params.navigation.links.portfolio }}
-                    <li>
-                        <!-- <a class="page-scroll" href="#portfolio">
-                          <i class="fa fa-bars fa wow bounceIn"></i>
-                          {{ .Site.Params.navigation.links.portfolio }}
-                        </a> -->
                     </li>
                 {{ end }}
                 {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
