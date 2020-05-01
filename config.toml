@@ -103,9 +103,3 @@ googleAnalytics = ""
 		whatsapp = "11 970-517-654"
 		instagram = "https://www.instagram.com/veganburger/"
 		email = "contato@veganburger.com.br"
-
-	 # Google Maps section
-	# [params.location]
-	# 	latitude  = "34.007850"
-	# 	longitude = "-118.499305"
-	# 	maps_api_key = ""
