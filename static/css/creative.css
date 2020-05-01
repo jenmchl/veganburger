@@ -636,10 +636,11 @@ img::-moz-selection {
     text-align: center;
 }
 
-#location iframe {
+#location {
     width: 100%;
     height: 528px;
-    top:-48px;;
-    position:relative;
-    border:none;
+}
+
+#map {
+    height: 100%;
 }
