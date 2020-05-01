@@ -16,15 +16,15 @@
             {{ partial "about.html" . }}
         {{ end }} -->
 
-        <!-- {{ if .Site.Params.services.list }}
-            {{ partial "services.html" . }}
-        {{ end }} -->
-
         {{ if .Site.Data.projects }}
             {{ partial "portfolio.html" . }}
         {{ end }}
 
         {{ partial "location.html" . }}
+
+        {{ if .Site.Params.services.list }}
+            {{ partial "services.html" . }}
+        {{ end }}
 
         <!-- {{ if .Site.Params.aside }}
             {{ partial "aside.html" . }}

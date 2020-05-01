@@ -1,0 +1,43 @@
+{{ "<!-- SERVICES -->" | safeHTML }}
+<section id="services">
+    <!-- {{ with .Site.Params.services.headline }}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ . }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    {{ end }} -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box delivery-price">
+                    <h2>R$6</h2>
+                    <h3>ENTREGA</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box delivery-time">
+                    <h2>SEG-SEX 18h-22h</h2>
+                    <h3>ATENDIMENTO</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box delivery-payment">
+                    <div>
+                        <img src="{{ .Site.BaseURL }}img/payment/cash.png"/>
+                        <img src="{{ .Site.BaseURL }}img/payment/master.png"/>
+                        <img src="{{ .Site.BaseURL }}img/payment/visa.png"/>
+                    </div>
+                    <h3>Formas de Pagamento</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
