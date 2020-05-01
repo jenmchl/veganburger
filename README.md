@@ -7,7 +7,7 @@ Instale Hugo de acordo com as [instruções do site](https://gohugo.io/getting-s
 ## Clone o repositório
 
 Usando o terminal, vá para a pasta onde você deseja guardar o repositório deve ficar e execute:
-```bash
+```
 git clone https://github.com/jenmchl/veganburger.git
 cd veganburger
 ```
@@ -15,7 +15,7 @@ cd veganburger
 ## Adicione o submódulo do tema
 
 O site Vegan Burger usa um tema que está em outro repositório do GitHub. Para clonar essa pasta, execute:
-```bash
+```
 cd themes
 git clone https://github.com/digitalcraftsman/hugo-creative-theme
 ```
@@ -25,13 +25,15 @@ git clone https://github.com/digitalcraftsman/hugo-creative-theme
 Se você quer renderizar o mapa do Google Maps localmente, precisa utilizar uma *API Key*. [Clique aqui](https://developers.google.com/maps/gmp-get-started) e saiba mais.
 
 Com sua chave criada, crie um novo arquivo em `config/development/config.toml`. Você pode fazer isso executando:
-``
+
+```
 mkdir -p config/development/
 touch config/development/config.toml
 ```
 
-Adicione o seguiinte conteúdo ao novo arquivo, supondo que sua chave seja `xyz`, por exemplo:
-```toml
+Adicione o seguinte conteúdo ao novo arquivo, supondo que sua chave seja `xyz`, por exemplo:
+
+```
 [params]
 	 [params.location]
 		maps_api_key = "xyz"
