@@ -39,8 +39,7 @@ Adicione o seguinte conteúdo ao novo arquivo, supondo que sua chave seja `xyz`,
 
 ```
 [params]
-	[params.location]
-		maps_api_key = "xyz"
+  maps_api_key = "xyz"
 
 ```
 
