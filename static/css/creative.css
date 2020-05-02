@@ -310,6 +310,12 @@ header .header-content .header-content-inner p {
     margin-bottom: 3px;
 }
 
+#contact i {
+    margin-right: 3px;
+}
+
+#contact i .fa-envelope-o { font-size: 17px; }
+
 .section-heading {
     margin-top: 0;
 }
