@@ -6,6 +6,8 @@
 <script src="{{ "js/jquery.easing.min.js" | absURL }}"></script>
 <script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
 <script src="{{ "js/wow.min.js" | absURL }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.maps_api_key }}&libraries=places&callback=initMap"async defer></script>
+{{ with .Site.Params.maps_api_key || (getenv "HUGO_PARAMS_MAPS_API_KEY") }}
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ . }}&libraries=places&callback=initMap"async defer></script>
+{{ end }}
 {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
 <script src="{{ "js/creative.js" | absURL }}"></script>
