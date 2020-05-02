@@ -97,7 +97,7 @@ googleAnalytics = ""
 
 	# Contact section
 	[params.contact]
-		headline = "Peça agora!"
+		headline = ""
 		description = ""
 		phone = "11 3101-7912"
 		whatsapp = "11 970-517-654"
