@@ -1,5 +1,5 @@
 
-baseurl = "https://veganburger.com.br/"
+baseurl = "https://heuristic-dijkstra-51d210.netlify.app/"
 languageCode = "pt-br"
 title = "Vegan Burger Bike Delivery"
 theme = "hugo-creative-theme"
