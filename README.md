@@ -20,6 +20,11 @@ cd themes
 git clone https://github.com/digitalcraftsman/hugo-creative-theme
 ```
 
+```
+git submodule add https://github.com/digitalcraftsman/hugo-creative-theme.git themes/hugo-creative-theme
+```
+
+
 ## Adicione uma API Key para o Google Maps
 
 Se você quer renderizar o mapa do Google Maps localmente, precisa utilizar uma *API Key*. [Clique aqui](https://developers.google.com/maps/gmp-get-started) e saiba mais.
@@ -35,7 +40,7 @@ Adicione o seguinte conteúdo ao novo arquivo, supondo que sua chave seja `xyz`,
 
 ```
 [params]
-	 [params.location]
+	[params.location]
 		maps_api_key = "xyz"
 
 ```
