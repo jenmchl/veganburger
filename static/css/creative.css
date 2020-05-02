@@ -134,7 +134,6 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: var(--vb-orange)!important;
     background-color: transparent;
 }
 
