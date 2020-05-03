@@ -478,7 +478,9 @@ header .header-content .header-content-inner p {
 }
 
 .burger-container .description {
-    margin-top: 10px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 15px;
 }
 
 .call-to-action h2 {
