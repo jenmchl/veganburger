@@ -1,5 +1,7 @@
 <section id="location" class="no-padding">
-    <input id="address-input" class="controls" type="text" placeholder="Busque seu endereço">
+    <div id="address-input-container">
+      <input id="address-input" class="controls" type="text" placeholder="Busque seu endereço">
+    </div>
     <div id="map"></div>
     <div class="delivery-text"><h2><strong>Área de entrega</strong></h2></div>
     <script>
@@ -8,7 +10,8 @@
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -23.550717, lng: -46.646465},
           zoom: 13.5,
-          mapTypeControl: false
+          mapTypeControl: false,
+          fullscreenControl: false
         });
 
         var deliveryAreaCoords = [
@@ -91,9 +94,9 @@
         deliveryArea.setMap(map);
 
         // Create the search box and link it to the UI element.
-        var input = document.getElementById('address-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        var container = document.getElementById('address-input-container');
+        var searchBox = new google.maps.places.SearchBox(container);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(container);
 
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
