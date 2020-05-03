@@ -242,7 +242,7 @@ header .header-content .header-content-inner p {
     position: relative;
 }
 
-.header-content i {
+.navbar i, .header-content i {
     margin-right: 3px;
 }
 

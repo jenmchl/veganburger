@@ -3,7 +3,7 @@
     <div class="container-fluid">
         {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
         <div class="navbar-header">
-            <a class="mob-phone page-scroll" href="#contact">
+            <a class="mob-phone page-scroll" href="tel:{{ .Site.Params.contact.phoneNumber }}">
                 <i class="fa fa-phone fa"></i>
                 <strong>11 3101-7912</strong>
             </a>
@@ -15,40 +15,22 @@
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                  <a class="page-scroll" href="#contact">
-                      <!-- <i class="fa fa-phone fa wow bounceIn"></i> -->
-                      seg-sex 18h-22h
-                  </a>
-              </li>
                 <li>
                     <a class="page-scroll" href="#contact">
-                        <i class="fa fa-phone fa wow bounceIn"> </i>
-                         11 3101-7912
+                        <!-- <i class="fa fa-phone fa wow bounceIn"></i> -->
+                        seg-sex 18h-22h
                     </a>
                 </li>
-
-                {{ if and .Site.Params.about .Site.Params.navigation.links.about }}
-                    <li>
-                        <a class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
-                    </li>
-                {{ end }}
-                {{ if and .Site.Params.services.list .Site.Params.navigation.links.services }}
-                    <li>
-                        <a class="page-scroll" href="#services">{{ .Site.Params.navigation.links.services }}</a>
-                    </li>
-                {{ end }}
-                {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
                 <li>
-                    <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
+                    <a class="page-scroll" href="#contact">
+                        <i class="fa fa-phone fa wow bounceIn"></i>11 3101-7912
+                    </a>
                 </li>
-                {{ end }}
                 <li>
                     <a class="page-scroll" href="https://www.instagram.com/veganburger/" target="_blank">
                         <i class="fa fa-instagram fa wow bounceIn"></i>
                     </a>
                 </li>
-
             </ul>
         </div>
         {{ "<!-- /.navbar-collapse -->" | safeHTML }}
