@@ -434,6 +434,20 @@ header .header-content .header-content-inner p {
     color: white;
 }
 
+.burger-container:nth-child(7) {
+    height: 400px;
+}
+
+.burger-container:nth-child(8), .burger-container:nth-child(9) {
+    height: 320px;
+}
+
+@media(min-width:768px) {
+    .burger-container {
+        height: 360px;
+    }
+}
+
 .burger {
     background-size: contain;
     background-repeat: no-repeat;
