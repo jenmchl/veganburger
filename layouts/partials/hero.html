@@ -6,7 +6,7 @@
         {{ if .Site.Params.contact.phone }}
             <a href="tel:{{ .Site.Params.contact.phoneNumber }}" class="action btn btn-xl">
                 <i class="fa fa-phone"></i>
-                <span class="highlight-font"> {{ .Site.Params.contact.phone }}</span>
+                <span class="highlight-font">{{ .Site.Params.contact.phone }}</span>
             </a>
         {{ end }}
         <br/>
@@ -14,12 +14,12 @@
             <!-- Mobile -->
             <a id="zap-number-mobile" href="whatsapp://send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
                 <i class="fa fa-whatsapp"></i>
-                <span class="highlight-font"> {{ .Site.Params.contact.whatsapp }}</span>
+                <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
             </a>
             <!-- Desktop -->
             <a id="zap-number-desktop" href="https://web.whatsapp.com/send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
                 <i class="fa fa-whatsapp"></i>
-                <span class="highlight-font"> {{ .Site.Params.contact.whatsapp }}</span>
+                <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
             </a>
         {{ end }}
     </div>

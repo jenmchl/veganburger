@@ -242,6 +242,10 @@ header .header-content .header-content-inner p {
     position: relative;
 }
 
+.header-content i {
+    margin-right: 3px;
+}
+
 .logo-container {
     height: 100%;
     background-size: contain;
