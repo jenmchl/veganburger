@@ -1,34 +1,23 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
-
     <div class="header-content">
         <div class="logo-container" style="background-image: url('img/logo.png')">
-            <!-- <div class="header-content-inner">
-                
-                {{ with .Site.Params.hero.slogan }}
-                    <h1>{{ . | markdownify  }}</h1>
-                {{ end }}
-                {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
-                    <hr>
-                {{ end }}
-                {{ with .Site.Params.hero.subtitle }}
-                    <p>{{ . | markdownify }}</p>
-                {{ end }}
-                {{ with .Site.Params.hero.buttonText }}
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ . }}</a>
-                {{ end }}
-                
-            </div> -->
         </div>
         {{ if .Site.Params.contact.phone }}
-            <a href="#about" class="action btn btn-xl">
+            <a href="tel:{{ .Site.Params.contact.phoneNumber }}" class="action btn btn-xl">
                 <i class="fa fa-phone"></i>
                 <span class="highlight-font">{{ .Site.Params.contact.phone }}</span>
             </a>
         {{ end }}
         <br/>
         {{ if .Site.Params.contact.whatsapp }}
-            <a href="#about" class="action btn btn-xl">
+            <!-- Mobile -->
+            <a id="zap-number-mobile" href="whatsapp://send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
+                <i class="fa fa-whatsapp"></i>
+                <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
+            </a>
+            <!-- Desktop -->
+            <a id="zap-number-desktop" href="https://web.whatsapp.com/send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
                 <i class="fa fa-whatsapp"></i>
                 <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
             </a>

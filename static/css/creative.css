@@ -242,6 +242,10 @@ header .header-content .header-content-inner p {
     position: relative;
 }
 
+.navbar i, .header-content i {
+    margin-right: 3px;
+}
+
 .logo-container {
     height: 100%;
     background-size: contain;
@@ -259,6 +263,10 @@ header .header-content .header-content-inner p {
 
 .action.btn:hover {
     color: var(--vb-orange);
+}
+
+#zap-number-desktop {
+    display: none;
 }
 
 @media(min-width:768px) {
@@ -289,6 +297,13 @@ header .header-content .header-content-inner p {
         font-size: 5rem;
         bottom: 180px;
     }
+
+    #zap-number-mobile {
+        display: none;
+    }
+    #zap-number-desktop {
+        display: inline-block;
+    }
 }
 
 #contact {
@@ -309,6 +324,12 @@ header .header-content .header-content-inner p {
 #contact .contact-info .contact-item {
     margin-bottom: 3px;
 }
+
+#contact i {
+    margin-right: 3px;
+}
+
+#contact i.fa-envelope { font-size: 16px; }
 
 .section-heading {
     margin-top: 0;
@@ -428,6 +449,20 @@ header .header-content .header-content-inner p {
     color: white;
 }
 
+.burger-container:nth-child(7) {
+    height: 400px;
+}
+
+.burger-container:nth-child(8), .burger-container:nth-child(9) {
+    height: 320px;
+}
+
+@media(min-width:768px) {
+    .burger-container {
+        height: 360px;
+    }
+}
+
 .burger {
     background-size: contain;
     background-repeat: no-repeat;
@@ -458,7 +493,9 @@ header .header-content .header-content-inner p {
 }
 
 .burger-container .description {
-    margin-top: 10px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 15px;
 }
 
 .call-to-action h2 {
@@ -646,8 +683,6 @@ img::-moz-selection {
     position: relative;
     bottom: 520px;
     background-color: rgba(234, 152, 62, 0.8);
-    width: 500px;
-    max-width: 100%;
     padding: 5px 5px;
     text-transform: uppercase;
     text-align: center;
@@ -663,6 +698,12 @@ img::-moz-selection {
     margin: 0px;
 }
 
+#address-input-container {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 #location .controls {
     background-color: #fff;
     border-radius: 2px;
@@ -671,16 +712,19 @@ img::-moz-selection {
     box-sizing: border-box;
     font-family: 'Raleway',Merriweather,'Helvetica Neue',Arial,sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 700;
     height: 29px;
-    margin-right: 5px;
-    margin-left: 5px;
+    width: 100%;
     margin-top: 44px;
     outline: none;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
-    width: 500px;
-    max-width: 100%;
+}
+
+@media(min-width:768px) {
+    #location .delivery-text, #location .controls {
+        width: 500px;
+    }
 }
 
 #location .controls:focus {
