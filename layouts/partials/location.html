@@ -95,7 +95,9 @@
 
         // Create the search box and link it to the UI element.
         var container = document.getElementById('address-input-container');
-        var searchBox = new google.maps.places.SearchBox(container);
+        var input = document.getElementById('address-input');
+
+        var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(container);
 
         // Bias the SearchBox results towards current map's viewport.
