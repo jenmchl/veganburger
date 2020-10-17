@@ -3,9 +3,9 @@
     <div class="container-fluid">
         {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
         <div class="navbar-header">
-            <a class="mob-phone page-scroll" href="tel:{{ .Site.Params.contact.phoneNumber }}">
-                <i class="fa fa-phone fa"></i>
-                <strong>11 3101-7912</strong>
+            <a class="mob-phone page-scroll" href="whatsapp://send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+                <strong>{{ .Site.Params.contact.whatsapp }}</strong>
             </a>
 
             <a class="navbar-brand page-scroll" href="#page-top">
@@ -22,8 +22,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">
-                        <i class="fa fa-phone fa wow bounceIn"></i>11 3101-7912
+                    <a class="page-scroll" href="https://web.whatsapp.com/send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank">
+                        <i class="fa fa-whatsapp fa wow bounceIn"></i>{{ .Site.Params.contact.whatsapp }}
                     </a>
                 </li>
                 <li>

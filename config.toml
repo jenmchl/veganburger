@@ -20,21 +20,18 @@ googleAnalytics = ""
 
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
-	name = "Vegan Burger"
+	name = "Vegan Burger Bike Delivery"
 	description = "Peça pelo Whatsapp (11)97710-5250. Hambúrguer vegan entregue de bicicleta no Centro de São Paulo desde 2009."
 
 	# The path must be relative to the static folder
 	favicon = "vbicon.ico"
 	bikeimg = "img/bike.png"
 
-
 	# Navigation
 	[params.navigation]
 		brand = "Vegan Burger"
 
 		[params.navigation.links]
-			about     = ""
-			services  = ""
 			portfolio = "Cardápio"
 			contact   = "Contato"
 

@@ -3,21 +3,24 @@
     <div class="header-content">
         <div class="logo-container" style="background-image: url('img/logo.png')">
         </div>
-        {{ if .Site.Params.contact.phone }}
+        <!-- {{ if .Site.Params.contact.phone }}
             <a href="tel:{{ .Site.Params.contact.phoneNumber }}" class="action btn btn-xl">
                 <i class="fa fa-phone"></i>
                 <span class="highlight-font">{{ .Site.Params.contact.phone }}</span>
             </a>
-        {{ end }}
+        {{ end }} -->
         <br/>
         {{ if .Site.Params.contact.whatsapp }}
-            <!-- Mobile -->
-            <a id="zap-number-mobile" href="whatsapp://send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
+        
+        <!-- Mobile -->
+        <a id="zap-number-mobile" href="whatsapp://send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
+                <span class="highlight-font">Peça pelo WhatsApp</span></br> 
                 <i class="fa fa-whatsapp"></i>
                 <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
             </a>
             <!-- Desktop -->
             <a id="zap-number-desktop" href="https://web.whatsapp.com/send?phone={{ .Site.Params.contact.whatsappNumber }}" target="_blank" class="action btn btn-xl">
+                <span class="highlight-font">Peça pelo WhatsApp</span></br>
                 <i class="fa fa-whatsapp"></i>
                 <span class="highlight-font">{{ .Site.Params.contact.whatsapp }}</span>
             </a>
