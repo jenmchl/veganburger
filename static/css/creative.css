@@ -325,6 +325,10 @@ header .header-content .header-content-inner p {
     margin-bottom: 3px;
 }
 
+#contact .contact-info .contact-item a i {
+    color: white;
+}
+
 #contact i {
     margin-right: 3px;
 }
